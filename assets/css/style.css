@@ -36,7 +36,6 @@ h1, h2 {
 
 #menu, #logo {
     line-height: 75px;
-
 }
 
 #menu li {
@@ -48,7 +47,6 @@ h1, h2 {
 #menu a {
     text-decoration: none;
     color: inherit;
-
 }
 
 #menu a:hover {
@@ -59,6 +57,7 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
+/* hero image and cover text */
 
 #hero-outer {
     height: 600px;
@@ -77,19 +76,19 @@ h1, h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
-    /*  animates zoom effect on loading page  */
+    /* animates zoom effect on loading page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-/*  level of zoom for hero image  */
-
+/* creates the level of zoom for hero image */
 @keyframes hero-zoom {
     from{
         transform: scale(1);
     }
-    to{transform: scale(1.1);
+    to{
+        transform: scale(1.1);
     }
 }
 
@@ -98,6 +97,7 @@ h1, h2 {
     font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
+
     width: 300px;
     height: 200px;
 
@@ -112,24 +112,24 @@ h1, h2 {
     position: absolute;
 }
 
-/*  club ethos  */
+/* club ethos */
 
 #club-ethos {
     height: 600px;
-
 }
+
 #left-about {
     padding-top: 30px;
     width: 33%;
     float: left;
-    background-color: blue;
+    
 }
 
 #right-about {
-    padding: 30px;
+    padding-top: 30px;
     width: 33%;
     float: right;
-    background-color: silver;
+    
 }
 
 #center-about {
@@ -137,5 +137,36 @@ h1, h2 {
     margin: 0 auto;
     background-color: green;
 }
-        
+
+hr {
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading {
+    width: 60%;
+    float: left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
+}
+
+.right-about-heading h2 {
+    text-align: right;
+}
+
+.right-about-heading p {
+    text-align: right;
+}
+
+
     
